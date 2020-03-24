@@ -1,0 +1,1 @@
+INSERT INTO wspolnota(id, name) VALUES (1,'Grabiszynska 57'),(2,'Teczowa 83');

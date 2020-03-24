@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Wspolnoty</title>
+</head>
+<body>
+<h1>Wspolnoty</h1>
+
+<ul>
+    <li th:each="wspolnota: ${wspolnoty}">
+        <a th:href="'/wspolnota/'+${wspolnota.id} " th:text="${wspolnota.name}"></a>
+    </li>
+</ul>
+
+</body>
+</html>
