@@ -1,5 +1,7 @@
 package pl.naukajavy.wspolnoty;
 
+import pl.naukajavy.wspolnoty.budynek.Budynek;
+
 import javax.persistence.*;
 
 @Entity

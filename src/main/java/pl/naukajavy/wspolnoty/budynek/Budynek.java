@@ -1,4 +1,6 @@
-package pl.naukajavy.wspolnoty;
+package pl.naukajavy.wspolnoty.budynek;
+
+import pl.naukajavy.wspolnoty.wspolnota.Wspolnota;
 
 import javax.persistence.*;
 

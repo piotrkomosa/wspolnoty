@@ -1,4 +1,4 @@
-package pl.naukajavy.wspolnoty;
+package pl.naukajavy.wspolnoty.wspolnota;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
