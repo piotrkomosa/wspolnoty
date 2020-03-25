@@ -1,9 +1,9 @@
 package pl.naukajavy.wspolnoty.wspolnota;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import pl.naukajavy.wspolnoty.budynek.Budynek;
+
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Wspolnota {
@@ -13,8 +13,20 @@ public class Wspolnota {
     private Long id;
     private String name;
 
+
+    @OneToMany(mappedBy = "wspolnota")
+    private List<Budynek> budynki;
+
     public Long getId() {
         return id;
+    }
+
+    public List<Budynek> getBudynki() {
+        return budynki;
+    }
+
+    public void setBudynki(List<Budynek> budynki) {
+        this.budynki = budynki;
     }
 
     public void setId(Long id) {

@@ -9,9 +9,13 @@
 
 <ul>
     <li th:each="wspolnota: ${wspolnoty}">
-        <a th:href="'/wspolnota/'+${wspolnota.id} " th:text="${wspolnota.name}"></a>
+        <a th:href="'/wspolnota/'+${wspolnota.id} " th:text="|${wspolnota.name} (${wspolnota.budynki.size()})|"></a>
     </li>
 </ul>
+
+
+<a href="wspolnota/dodaj">Dodaj kolejny budynek</a>
+
 
 </body>
 </html>

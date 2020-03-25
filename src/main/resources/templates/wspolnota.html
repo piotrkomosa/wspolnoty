@@ -8,11 +8,11 @@
 <h1 th:text="${wspolnota.name}"></h1>
 
 <ul>
-    <li th:each="budynek: ${budynki}">
+    <li th:each="budynek: ${wspolnota.budynki}">
         <a th:href="'/budynek/'+${budynek.id} " th:text="|${budynek.ulica} ${budynek.numerDomu}|"></a>
     </li>
 </ul>
 
-
+<a href="/budynek/dodaj">Dodaj kolejny budynek</a>
 </body>
 </html>
